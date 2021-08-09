@@ -1,0 +1,86 @@
+<div class="container pt-4">
+
+    <div class="card shadow">
+      <form [formGroup]="updateForm">
+        <div class="card-header text-white" style="background-color: #6063b3;">
+          <h3 class="text-center mt-2">Update Employee Data</h3>
+        </div>
+        <div class="row row-data p-2">
+
+          <div class="col-lg-5">
+              <input type="number" class="form-control" required formControlName="id" name="" hidden id=""
+              placeholder="Enter Id">
+            <div class="form-group">
+              <label for=""> Name</label>
+              <input type="text" class="form-control" required formControlName="name" name="" id=""
+                aria-describedby="emailHelpId" placeholder="Enter name">
+              <div *ngIf="f.name.touched && f.name.invalid" class="text-danger">
+                <div *ngIf="f.name.errors.required">Name is required.</div>
+                <div *ngIf="f.name.errors?.minlength">Minimum 4 character are required.</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for=""> Email</label>
+              <input type="email" class="form-control" required formControlName="email" name="" id=""
+                aria-describedby="emailHelpId" placeholder="Enter Email">
+              <div *ngIf="f.email.touched && f.email.invalid" class="text-danger">
+                <div *ngIf="f.email.errors.required">email is required.</div>
+                <div *ngIf="f.email.errors?.minlength">Minimum 4 character are required.</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for=""> Age</label>
+              <input type="number" class="form-control" required formControlName="age" name="" id=""
+                aria-describedby="emailHelpId" placeholder="Enter your age">
+              <div *ngIf="f.age.touched && f.age.invalid" class="text-danger">
+                <div *ngIf="f.age.errors.required">age is required.</div>
+                <div *ngIf="f.age.errors?.minlength">Minimum 4 character are required.</div>
+              </div>
+            </div>
+          </div> <!-- 1st col-lg-5 end  -->
+          <div class="col-lg-5">
+            <div class="form-group">
+              <label for=""> Qualification </label>
+              <input type="text" class="form-control" required formControlName="qualification" name="" id=""
+                aria-describedby="emailHelpId" placeholder="Enter your Qualification">
+              <div *ngIf="f.qualification.touched && f.qualification.invalid" class="text-danger">
+                <div *ngIf="f.qualification.errors.required">qualification is required.</div>
+                <div *ngIf="f.qualification.errors?.minlength">Minimum 4 character are required.</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for=""> Phone nnumber </label>
+              <input type="number" class="form-control" required formControlName="number" name="" id=""
+                placeholder="Enter your Marry Staus">
+              <div *ngIf="f.number.touched && f.number.invalid" class="text-danger">
+                <div *ngIf="f.number.errors.required">number is required.</div>
+                <div *ngIf="f.number.errors?.minlength">Minimum 4 character are required.</div>
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <label for=""> Location </label>
+              <input type="text" class="form-control" required formControlName="location" name="" id=""
+                aria-describedby="emailHelpId" placeholder="Enter your location">
+              <div *ngIf="f.location.touched && f.location.invalid" class="text-danger">
+                <div *ngIf="f.location.errors.required">location is required.</div>
+                <div *ngIf="f.location.errors?.minlength">Minimum 4 character are required.</div>
+              </div>
+            </div>
+
+          </div> <!-- 1st col-lg-5 end -->
+
+        </div> <!-- row end -->
+        <div class="submit-button">
+          <button type="button" (click)="updateDataValue()" class="btn w-25 text-white"
+            style="background-color: #0a67d1;">Update</button>
+            <button type="button" class="btn btn-white" routerLink ="/">Cancel</button>
+        </div>
+      </form>
+    </div> <!-- card end -->
+
+  </div> <!-- container end -->
+

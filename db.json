@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "name": "mahesh",
+      "email": "mahi@gmail.com",
+      "age": 30,
+      "qualification": "degree",
+      "number": 91789456123,
+      "location": "hyderabad",
+      "id": 1
+    },
+    {
+      "name": "Rakesh",
+      "email": "raki@gmail.com",
+      "age": 23,
+      "qualification": "btech",
+      "number": 917894561547,
+      "location": "mumbai",
+      "id": 2
+    }
+  ]
+}

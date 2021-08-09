@@ -1,0 +1,25 @@
+.row-data{
+  display: flex;
+  justify-content: center;
+}
+.submit-button{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.form-control:focus {
+  box-shadow: none;
+  outline: none;
+}
+button:focus {
+  box-shadow: none;
+  outline: none;
+}
+.form-control.ng-touched,
+.form-control.ng-invalidvalid {
+    border-color: red !important;
+}
+
+.form-control.ng-valid {
+    border-color: green !important;
+}
